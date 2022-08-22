@@ -245,20 +245,34 @@ h3 {
 
 /*BACKGROUNDS - CARDS*/
 
+.enem {
+    background: url(../media/enem.png) center no-repeat;
+    background-size: 50%;
+}
+
+.alura-imercao-java {
+    background: url(../media/imersao-java.svg) center no-repeat;
+    background-size: 70%;
+}
+
 .alura-imercao-dev-2 {
     background: url(../media/imersao-dev.svg) center no-repeat;
+    background-size: 70%;
 }
 
 .alura-imercao-dev-1 {
     background: url(../media/imersao-dev.svg) center no-repeat;
+    background-size: 70%;
 }
 
 .alura-imercao-react {
     background: url(../media/imersao-react.svg) center no-repeat;
+    background-size: 70%;
 }
 
 .alura-imercao-dados {
-    background: url(../media/imersao-dev.svg) center no-repeat;
+    background: url(../media/imersao-dados.svg) center no-repeat;
+    background-size: 70%;
 }
 
 .hashtag {
@@ -269,6 +283,11 @@ h3 {
 .nlw-together {
     background: url(../media/nlw.png) center no-repeat;
     background-size: 60%;
+}
+
+.maratona-explorer {
+    background: url(../media/maratona-explorer.svg) center no-repeat;
+    background-size: 65%;
 }
 
 .kenzie {
@@ -318,7 +337,8 @@ h3 {
 }
 
 .curso-web,
-.web-js {
+.web-js,
+.estudonauta {
     background: url(../media/drive.png) center no-repeat;
     background-size: 65%;
 }
@@ -365,4 +385,30 @@ h3 {
 
 .criptografia {
     background: url(../media/criptografia.png) center no-repeat;
+}
+
+@media screen and (max-width: 480px) {
+    .header img {
+        width: 230px;
+    }
+    .tinyHeader img {
+        width: 180px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    .container {
+        margin-bottom: 40px;
+    }
+    .card {
+        width: 300px;
+        height: 200px;
+    }
+    .new {
+        margin-top: 103px;
+        margin-left: 107px;
+    }
+    .tittle:before {
+        top: -1px;
+    }
 }

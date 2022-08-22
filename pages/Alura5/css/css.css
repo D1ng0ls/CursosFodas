@@ -1,0 +1,128 @@
+body {
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    color: #22baff;
+}
+
+pre {
+    overflow: auto;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    overflow-y: hidden;
+    font-size: .8em;
+    line-height: 1.7em;
+    padding: 0 0 0 2em;
+    color: #333;
+    margin-bottom: 1em;
+    background-color: #1c1c1c;
+}
+
+.codigo code {
+    font-size: .85rem;
+    line-height: 1.7em;
+    display: block;
+    overflow-x: auto;
+    padding: 1em 1em 1em 1.5em;
+    color: #fff;
+    background: transparent;
+    border-left: solid 1px rgb(255 255 255 / 10%);
+}
+
+.cabecao {
+    display: inline-block;
+    margin-left: 2%;
+    color: white;
+}
+
+.prox_aula {
+    margin-left: 2%;
+    display: block;
+    position: fixed;
+}
+
+.prox_aula2 {
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+    font-weight: bolder;
+    background-color: #ffe552;
+    font-family: 'Courier New', Courier, monospace;
+    opacity: 1;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    color: #fff;
+    transition: 1s;
+}
+
+.aulas {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.aulas a {
+    color: white;
+}
+
+.aula {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    align-items: center;
+    text-align: left;
+    color: white;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    box-shadow: 0px 7px 20px white;
+}
+
+.embed::-webkit-scrollbar {
+    background: transparent;
+}
+
+.embed::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.embed::-webkit-scrollbar-thumb {
+    background: #474c50;
+}
+
+.embed::-webkit-scrollbar-track {
+    background: rgba(202, 204, 206, 0.04);
+}
+
+@media screen and (max-width: 480px) {
+    .aula {
+        margin: 2%;
+        width: 96%;
+    }
+    .prox_aula {
+        display: none;
+    }
+    .prox_aula2 {
+        display: block;
+    }
+    iframe {
+        height: 200px;
+    }
+}

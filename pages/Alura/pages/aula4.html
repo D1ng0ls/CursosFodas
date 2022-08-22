@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/css.css">
+    <title>Aula 4</title>
+    <link rel="shortcut icon" href="../../../media/ICON.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="cabecao">
+            <h1>IMERSÃO DEV_</h1>
+            <h2>AULA 4: ALURAFLIX</h2>
+            <br>
+        </div>
+    </header>
+
+    <div class="prox_aula">
+        <a href="aula5.html"><input type="button" value="Próxima Aula" id="btn1" class="btn"></a>
+    </div>
+
+    <div class="aula">
+        <iframe src="https://www.youtube.com/embed/SByLYBM5TbI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h1>ALURAFLIX</h1>
+        <p>PARTICIPE E VÁ MAIS FUNDO</p>
+        <br>
+        <p>No nosso dia-a-dia é normal trabalharmos com quantidades grandes de dados. Imaginem uma lista de nomes de estudantes em uma escola, ou de todos os filmes do gênero "terror" em uma plataforma. Não é prático criarmos uma variável para cada informação,
+            então utilizamos muitas estruturas de dados para fazer isso.</p>
+        <p>Link do projeto base:</p>
+        <br>
+        <p><a href="https://gist.github.com/D1ng0ls/bd284719ba8c42a63dda1d0b333bcb4e" target="_blank">Clique aqui!</a></p>
+        <br>
+        <p>Nesta aula vamos ver a primeira delas, array, um tipo de lista de elementos, assim como algumas ferramentas para alterarmos e trabalharmos com estas listas. Depois de criarmos uma lista, vamos exibir os pôsters de todos os nossos filmes preferidos
+            na tela do navegador. Durante esta aula, usaremos o código abaixo:</p>
+        <br>
+        <pre class="codigo"><code>function listarFilmesNaTela(filme) {
+    var listaFilmes = document.querySelector('#listaFilmes')
+    var elementoFilme = "&lt;timg src=" + filme + "&gt;"
+    listaFilmes.innerHTML = listaFilmes.innerHTML + elementoFilme
+    }</code></pre>
+        <br>
+        <h2>Conteúdo detalhado dessa aula</h2>
+        <ul>
+            <li>Criar uma primeira array de filmes usando a sintaxe [];</li>
+            <li>Utilizar o método filmes.push("Nome Do Filme") para inserir um novo elemento na lista (ou seja, um novo filme na array);</li>
+            <li>Descobrir a quantidade de elementos em uma array com o método array.length;</li>
+            <li>Selecionar elementos de uma array utilizando a sintaxe array[número], lembrando sempre que o primeiro índice começa com zero, ou seja, array[0] para o primeiro elemento;</li>
+            <li>Utilizar a instrução for para iterar, ou seja, percorrer todos os elementos de uma array;</li>
+            <li>Criar uma array com imagens de pôsters de alguns filmes que gostamos;</li>
+            <li>Montar a lógica do programa que vai iterar esta array de filmes e exibir cada um deles na tela, integrando o for do JavaScript com a tag <code>&lt;img&gt;</code> do HTML.</li>
+        </ul>
+        <br>
+        <h2>Desafios dessa aula!</h2>
+        <ul>
+            <li>Criar uma array adicional com o nome dos filmes e trabalhar com as duas ao mesmo tempo, unindo imagens e textos através dos índices;</li>
+            <li>Exibir um prompt() com uma lista de filmes e exibir na tela somente o filme escolhido pelo usuário através do prompt;</li>
+            <li>Continuando o desafio acima, como fazer com que um filme só seja exibido uma vez?</li>
+        </ul>
+        <br>
+        <h2>Links importantes para você acompanhar a aula</h2>
+        <ul>
+            <li><a href="https://gist.github.com/D1ng0ls/bd284719ba8c42a63dda1d0b333bcb4e" target="_blank">Codepen com o código inicial</a></li>
+            <li><a href="https://www.imdb.com/" target="_blank">IMDb para pesquisar as imagens dos filmes</a></li>
+        </ul>
+        <br>
+        <h2>Links citados nessa aula</h2>
+        <ul>
+            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">Documentação da MDN sobre arrays</a></li>
+        </ul>
+        <br>
+        <h2>Como compartilhar seu CodePen:</h2>
+        <ul>
+            <li>Clique na opção Settings no canto superior direito;</li>
+            <li>Selecione a opção Pen Details (Detalhes);</li>
+            <li>No campo Pen Title você pode dar o nome do seu projeto;</li>
+            <li>No campo Pen Description, você pode dar detalhes sobre o projeto (o que ele faz, qual objetivo do projeto);</li>
+            <li>Para compartilhar seu projeto, no campo Tags, você pode adicionar #imersaodev,#alura</li>
+            <li>Agora só salvar seu projeto e compartilhar o link marcando a Alura nas redes sociais!</li>
+        </ul>
+        <br>
+        <div class="prox_aula2">
+            <a href="aula5.html"><input type="button" value="Próxima Aula" id="btn2" class="btn"></a>
+        </div>
+    </div>
+</body>
+
+</html>

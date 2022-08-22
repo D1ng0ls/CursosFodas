@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/css.css">
+    <title>Aula 8</title>
+    <link rel="shortcut icon" href="../../../media/ICON.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="cabecao">
+            <h1>IMERSÃO DEV_</h1>
+            <h2>AULA 8: TRUNFO, IMAGENS, MANIPULAÇÃO DO HTML E CSS</h2>
+            <br>
+        </div>
+    </header>
+
+    <div class="prox_aula">
+        <a href="aula9.html"><input type="button" value="Próxima Aula" id="btn1" class="btn"></a>
+    </div>
+
+    <div class="aula">
+        <iframe src="https://www.youtube.com/embed/UnJUlvV-k9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h1>TRUNFO, IMAGENS, MANIPULAÇÃO DO HTML E CSS</h1>
+        <p>PARTICIPE E VÁ MAIS FUNDO</p>
+        <br>
+        <p>Nesta oitava aula da Imersão Dev, vamos evoluir ainda mais nosso Trunfo, focando em exibir as cartas na tela! O código da aula para você acompanhar está aqui:</p>
+        <br>
+        <p><a href="https://gist.github.com/D1ng0ls/86bcd4ecd231adbf68ad34be21864e2d" target="_blank">Clique aqui!</a></p>
+        <br>
+        <p>Neste programa, vamos descobrir que podemos alterar não só o conteúdo do HTML com Javascript. Vamos aprender como manipular o CSS e exibir nossas cartas no tela. Além disso, vamos usar o código abaixo no decorrer desta aula:</p>
+        <br>
+        <pre class="codigo"><code>var moldura = '&lt;img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent.png" style=" width: inherit; height: inherit; position: absolute;"&gt;';</code></pre>
+        <br>
+        <h2>Conteúdo detalhado dessa aula</h2>
+        <ul>
+            <li>Adicionando o campo imagem nos objetos com o caminho da imagem;</li>
+            <li>Criar uma função que exibe a carta do jogador após o sorteio das cartas;</li>
+            <li>Adicionar a moldura da carta;</li>
+            <li>Escrever o resultado na tela após o duelo das cartas informando se o jogador venceu ou perdeu;</li>
+            <li>Criar uma função que exibe a carta da máquina;</li>
+            <li>Exibir os atributos e pontos da carta da máquina.</li>
+        </ul>
+        <br>
+        <h2>Desafios dessa aula!</h2>
+        <ul>
+            <li>Criar novas cartas com imagens e atributos diferentes.</li>
+        </ul>
+        <br>
+        <h2>Links importantes para você acompanhar a aula</h2>
+        <ul>
+            <li><a href="https://codepen.io/" target="_blank">Codepen - editor de código online</a></li>
+            <li><a href="https://www.alura.com.br/artigos/html-css-e-js-definicoes" target="_blank">HTML, CSS e JavaScript, quais as diferenças</a></li>
+            <li><a href="https://www.youtube.com/watch?v=xvkuNF_8Coc" target="_blank"> Usando o Vscode</a></li>
+            <li><a href="https://www.youtube.com/watch?v=DsFb24TgJ0c" target="_blank"> Priimeira aula da iimersão com Python</a></li>
+            <li><a href="https://gist.github.com/D1ng0ls/df1a9fb5d44fcc65ef88275ab2c3d347" target="_blank"> Repositório do código final da aula 7</a></li>
+        </ul>
+        <br>
+        <h2>Links citados nessa aula</h2>
+        <ul>
+            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Grammar_and_types#vari%C3%A1veis" target="_blank">Mais sobre variáveis</a></li>
+            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/parseFloat" target="_blank">Mais sobre a função parseFloat</a></li>
+        </ul>
+        <br>
+        <h2>Conteúdos extras:</h2>
+        <ul>
+            <li>Manipular o CSS pelo JS não é tarefa fácil. Pensando nisso, vamos disponibiliar o código da função exibiCartaJogador():</li>
+            <br>
+            <li style="list-style:none;"><pre class="codigo"><code>function exibeCartaJogador() {
+    var divCartaJogador = document.getElementById("carta-jogador")
+    var moldura = '&lt;img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent.png" style=" width: inherit; height: inherit; position: absolute;"&gt;';
+    divCartaJogador.style.backgroundImage = `url(${cartaJogador.imagem})`
+    var nome = `&lt;p class="carta-subtitle"&gt;${cartaJogador.nome}&lt;/p&gt;`
+    var opcoesTexto = ""
+
+    for (var atributo in cartaJogador.atributos) {
+        opcoesTexto += "&lt;input type='radio' name='atributo' value='" + atributo + "'&gt;" + atributo + " " + cartaJogador.atributos[atributo] + "&lt;br&gt;"
+    }
+
+    var html = "&lt;div id='opcoes' class='carta-status'&gt;"
+
+    divCartaJogador.innerHTML = moldura + nome + html + opcoesTexto + '&lt;/div&gt;'
+}</code></pre></li>
+        </ul>
+        <br>
+        <h2>Como compartilhar seu CodePen:</h2>
+        <ul>
+            <li>Clique na opção Settings no canto superior direito;</li>
+            <li>Selecione a opção Pen Details (Detalhes);</li>
+            <li>No campo Pen Title você pode dar o nome do seu projeto;</li>
+            <li>No campo Pen Description, você pode dar detalhes sobre o projeto (o que ele faz, qual objetivo do projeto);</li>
+            <li>Para compartilhar seu projeto, no campo Tags, você pode adicionar #imersaodev,#alura</li>
+            <li>Agora só salvar seu projeto e compartilhar o link marcando a Alura nas redes sociais!</li>
+        </ul>
+        <br>
+        <div class="prox_aula2">
+            <a href="aula9.html"><input type="button" value="Próxima Aula" id="btn2" class="btn"></a>
+        </div>
+    </div>
+</body>
+
+</html>

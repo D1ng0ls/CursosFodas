@@ -1,0 +1,72 @@
+body {
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+img {
+    width: 100%;
+}
+
+.cabecao {
+    display: inline-block;
+    margin-left: 2%;
+    color: white;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+    font-weight: bolder;
+    background: linear-gradient(to left, #49c3f6, #e25d41);
+    opacity: 1;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    color: #fff;
+    transition: all 1s;
+}
+
+.aulas {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.aulas a {
+    color: white;
+}
+
+.aula {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    align-items: center;
+    color: white;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    box-shadow: 0px 7px 20px white;
+}
+
+@media screen and (max-width: 480px) {
+    .aula {
+        margin: 2%;
+        width: 96%;
+    }
+    .prox_aula {
+        display: none;
+    }
+    .prox_aula2 {
+        display: block;
+    }
+    iframe {
+        height: 200px;
+    }
+}
