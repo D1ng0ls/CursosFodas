@@ -10,20 +10,6 @@
     <title>Cursos Fodas</title>
 </head>
 
-<script>
-    window.onscroll = function() {
-        myFunction()
-    };
-
-    function myFunction() {
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 50) {
-            document.getElementById("header").className = "tinyHeader";
-        } else {
-            document.getElementById("header").className = "header";
-        }
-    }
-</script>
-
 <body>
     <header class="header" id="header">
         <div class="logo-header">
@@ -202,6 +188,20 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+    
+        function myFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 50) {
+                document.getElementById("header").className = "tinyHeader";
+            } else {
+                document.getElementById("header").className = "header";
+            }
+        }
+    </script>
 </body>
 
 </html>
