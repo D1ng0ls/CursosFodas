@@ -1,0 +1,414 @@
+/*DEFAULT CONFIGS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@font-face {
+    font-family: "Valorant";
+    src: url('../fonts/Valorant_Font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*scrollbar*/
+
+::-webkit-scrollbar {
+    width: 7px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 5px;
+}
+
+
+/*fonts & generals*/
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-family: 'Valorant', 'Orbitron', sans-serif;
+}
+
+h1 {
+    font-size: 64px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+/*HEADER & FOOTER*/
+
+
+/*cabeçalho*/
+
+.header {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background: rgb(59, 59, 59);
+    box-shadow: 0px 0px 10px rgb(121, 121, 121);
+    top: 0;
+    z-index: 1;
+}
+
+.header img {
+    margin: 20px;
+    width: 250px;
+    transition: all .3s ease-in;
+}
+
+
+/*cabeçalho 2*/
+
+.tinyHeader {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background: rgb(59, 59, 59);
+    box-shadow: 0px 0px 10px rgb(121, 121, 121);
+    top: 0;
+    z-index: 1;
+}
+
+.tinyHeader img {
+    margin: 20px;
+    width: 200px;
+    transition: all .5s ease-in;
+}
+
+
+/*rodapé*/
+
+.footer {
+    width: 100%;
+    height: 58px;
+    text-align: left;
+    display: flex;
+    background: rgb(59, 59, 59);
+    box-shadow: 0px 0px 10px rgb(121, 121, 121);
+}
+
+.footer img {
+    width: 48px;
+    height: 48px;
+    margin: 2px;
+}
+
+.social-media,
+.facebook-cursos {
+    display: flex;
+    padding: 0 5px 0 5px;
+    margin: 5px 0 5px 0;
+}
+
+.facebook-cursos {
+    border-left: 2px solid white;
+}
+
+
+/*CURSOS*/
+
+.container-cursos {
+    align-items: center;
+    align-content: center;
+    width: 100vw;
+}
+
+.container {
+    margin-bottom: 80px;
+}
+
+.c1 {
+    margin-top: 125px;
+}
+
+
+/*barrinha estilo sublinhado*/
+
+.tittle:before,
+.tittle:after {
+    position: relative;
+    content: '';
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(60px);
+}
+
+.tittle:before {
+    top: 11px;
+    height: 3px;
+    width: 210px;
+    border-radius: 3px;
+}
+
+.tittle:after {
+    top: -81px;
+    height: 7px;
+    width: 50px;
+    border-radius: 7px;
+}
+
+.cursos {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    width: 100%;
+    z-index: 0;
+}
+
+
+/*CURSOS - CARDS*/
+
+.card {
+    color: transparent;
+    width: 350px;
+    height: 250px;
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;
+    opacity: .4;
+    border-radius: 10px;
+    border: 2px white solid;
+    box-shadow: 0px 0px 20px white;
+}
+
+.card:hover {
+    opacity: 1;
+    color: greenyellow;
+    box-shadow: 0px 0px 20px greenyellow;
+    border: 2px greenyellow solid;
+    background: transparent;
+    transition: all .3s ease-in;
+}
+
+
+/*card para itens novos*/
+
+.new-card {
+    border: 2px yellow solid;
+    box-shadow: 0px 0px 20px yellow;
+    opacity: .8;
+}
+
+.new {
+    position: absolute;
+    margin-top: 128px;
+    margin-left: 130px;
+    padding: 5px;
+    background: transparent;
+    color: yellow;
+    border-top: 2px yellow solid;
+    border-left: 2px yellow solid;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 0px 0px 10px yellow;
+    z-index: -1;
+}
+
+.container-new:hover .new {
+    color: greenyellow;
+    border-color: greenyellow;
+    box-shadow: 0px 0px 10px greenyellow;
+    transition: all .3s ease-in;
+    opacity: 1;
+}
+
+
+/*correção erro de altura card*/
+
+.curso-web {
+    transform: translateY(-13px);
+}
+
+
+/*BACKGROUNDS - CARDS*/
+
+.enem {
+    background: url(../media/enem.png) center no-repeat;
+    background-size: 50%;
+}
+
+.alura-imercao-java {
+    background: url(../media/imersao-java.svg) center no-repeat;
+    background-size: 70%;
+}
+
+.alura-imercao-dev-2 {
+    background: url(../media/imersao-dev.svg) center no-repeat;
+    background-size: 70%;
+}
+
+.alura-imercao-dev-1 {
+    background: url(../media/imersao-dev.svg) center no-repeat;
+    background-size: 70%;
+}
+
+.alura-imercao-react {
+    background: url(../media/imersao-react.svg) center no-repeat;
+    background-size: 70%;
+}
+
+.alura-imercao-dados {
+    background: url(../media/imersao-dados.svg) center no-repeat;
+    background-size: 70%;
+}
+
+.hashtag {
+    background: url(../media/hashtag.png) center no-repeat;
+    background-size: 60%;
+}
+
+.nlw-together {
+    background: url(../media/nlw.png) center no-repeat;
+    background-size: 60%;
+}
+
+.maratona-explorer {
+    background: url(../media/maratona-explorer.svg) center no-repeat;
+    background-size: 65%;
+}
+
+.kenzie {
+    background: url(../media/kenzie.png) center no-repeat;
+    background-size: 60%;
+}
+
+.cpp {
+    background: url(../media/cpp.png) center no-repeat;
+    background-size: 50%;
+}
+
+.csharp {
+    background: url(../media/csharp.png) center no-repeat;
+    background-size: 50%;
+}
+
+.python {
+    background: url(../media/python.png) center no-repeat;
+    background-size: 50%;
+}
+
+.html,
+.html5 {
+    background: url(../media/html5.png) center no-repeat;
+    background-size: 50%;
+}
+
+.css {
+    background: url(../media/css.png) center no-repeat;
+    background-size: 65%;
+}
+
+.js {
+    background: url(../media/js.png) center no-repeat;
+    background-size: 50%;
+}
+
+.react {
+    background: url(../media/react.png) center no-repeat;
+    background-size: 60%;
+}
+
+.mysql {
+    background: url(../media/mysql.png) center no-repeat;
+    background-size: 60%;
+}
+
+.curso-web,
+.web-js,
+.estudonauta {
+    background: url(../media/drive.png) center no-repeat;
+    background-size: 65%;
+}
+
+.marketing {
+    background: url(../media/mega.png) center no-repeat;
+    background-size: 65%;
+}
+
+.jornada-dev {
+    background: url(../media/jornada-dev.png) center no-repeat;
+    background-size: 70%;
+}
+
+.fundacao-bradesco {
+    background: url(../media/fundacao.png) center no-repeat;
+    background-size: 40%;
+}
+
+.senai {
+    background: url(../media/senai.png) center no-repeat;
+    background-size: 65%;
+}
+
+._42sp {
+    background: url(../media/42sp.png) center no-repeat;
+    background-size: 60%;
+}
+
+.academia {
+    background: url(../media/microsoft.png) center no-repeat;
+    background-size: 60%;
+}
+
+.download-cursos {
+    background: url(../media/download-cursos.png) center no-repeat;
+    background-size: 65%;
+}
+
+.santander {
+    background: url(../media/santander.png) center no-repeat;
+    background-size: 75%;
+}
+
+.criptografia {
+    background: url(../media/criptografia.png) center no-repeat;
+}
+
+@media screen and (max-width: 480px) {
+    .header img {
+        width: 230px;
+    }
+    .tinyHeader img {
+        width: 180px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    .container {
+        margin-bottom: 40px;
+    }
+    .card {
+        width: 300px;
+        height: 200px;
+    }
+    .new {
+        margin-top: 103px;
+        margin-left: 107px;
+    }
+    .tittle:before {
+        top: -1px;
+    }
+}
