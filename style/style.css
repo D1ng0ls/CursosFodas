@@ -486,3 +486,12 @@ h3 {
         top: -1px;
     }
 }
+
+@media screen and (max-width: 404px) {
+    .c7 .tittle:before {
+        transform: translateY(86px);
+    }
+    .tittle::after {
+        transform: translateY(61px);
+    }
+}
