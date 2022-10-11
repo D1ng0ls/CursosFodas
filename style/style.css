@@ -141,6 +141,33 @@ h3 {
     margin-top: 125px;
 }
 
+.c7 {
+    align-items: center;
+}
+
+.lista {
+    line-height: 1.75;
+    
+}
+
+.lista a {
+    color: white;
+}
+
+.lista a:hover {
+    color: yellowgreen;
+}
+
+.lista ul {
+    margin: auto;
+    padding: 0px;
+}
+
+.lista ul li {
+    text-align: left !important;
+    list-style: none;
+}
+
 
 /*barrinha estilo sublinhado*/
 
@@ -203,7 +230,7 @@ h3 {
 }
 
 .card h2 {
-    transition: all .3s ease-in;
+    transition: all .1.5s ease-in;
 }
 
 
