@@ -315,6 +315,11 @@ h3 {
     background-size: 60%;
 }
 
+.nlw-setup {
+    background: url(../media/nlw-setup.svg) center no-repeat;
+    background-size: 55%;
+}
+
 .maratona-explorer {
     background: url(../media/maratona-explorer.svg) center no-repeat;
     background-size: 65%;
