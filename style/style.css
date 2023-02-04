@@ -285,6 +285,11 @@ h3 {
     background-size: 70%;
 }
 
+.alura-imercao-dev-3 {
+    background: url(../media/imersao-dev.png) center no-repeat;
+    background-size: 70%;
+}
+
 .alura-imercao-dev-2 {
     background: url(../media/imersao-dev.svg) center no-repeat;
     background-size: 70%;
