@@ -280,6 +280,11 @@ h3 {
     background-size: 50%;
 }
 
+.alura-imercao-python {
+    background: url(../media/imersao-python.png) center no-repeat;
+    background-size: 90%;
+}
+
 .alura-imercao-java {
     background: url(../media/imersao-java.svg) center no-repeat;
     background-size: 70%;
